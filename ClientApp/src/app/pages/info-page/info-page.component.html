@@ -1,0 +1,27 @@
+<div class="wrapper">
+  <app-navbar></app-navbar>
+  <div class="container">
+    <!-- <div class="row"> -->
+      <!-- <div class="col"> -->
+        <h3>Witaj, {{ userDetails.username }}</h3>
+        <h5>Email: {{ userDetails.email }}</h5>
+        <h5>Stan konta: {{ userDetails.accountBalanceString }}</h5>
+        <h5>Trasy:</h5>
+        <div class="rent-wrapper">
+          <div *ngFor="let rental of userDetails.rentals">
+            <app-rent [rental]="rental"></app-rent>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="btn btn-outline-info" type="submit">
+            Doładuj konto
+          </button>
+          <button class="btn btn-outline-info" type="submit">
+            Edytuj konto
+          </button>
+        </div>
+      <!-- </div> -->
+    <!-- </div> -->
+  </div>
+</div>

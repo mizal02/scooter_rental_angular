@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <p>Nazwa użytkownika: {{ user.username }}</p>
+  <p>Email: {{ user.email }}</p>
+  <p>Rola: {{ user.role }}</p>
+  <p>Ilość wypożyczeń: {{ user.rentals.length }}</p>
+  <p>Aktywny: {{ user.isActive }}</p>
+  <div class="text-center p-2">
+    <button
+      class="btn disactivate"
+      (click)="deactive(user.id)"
+      *ngIf="user.isActive"
+    >
+      Blokuj konto
+    </button>
+    <button
+      class="btn activate"
+      (click)="deactive(user.id)"
+      *ngIf="!user.isActive"
+    >
+      Aktywuj konto
+    </button>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 35%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: center;
+  box-shadow: 2px 5px 20px -4px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  background-color: #fbfbfa;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+h3 {
+  margin: 12px 0;
+}

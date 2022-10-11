@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <h4>User: {{ username }}</h4>
+  <ul>
+    <li>
+      <a routerLink="/info-page">Informacje</a>
+    </li>
+    <li>
+      <a routerLink="/rental">Wypożyczanie</a>
+    </li>
+    <li>
+      <a routerLink="/users">Użytkownicy</a>
+    </li>
+    <li>
+      <a routerLink="/login" (click)="logout()">Wyloguj</a>
+    </li>
+  </ul>
+</div>

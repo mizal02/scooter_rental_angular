@@ -1,0 +1,45 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 40%;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 5px 20px -4px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  background-color: #fbfbfa;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.row h5 {
+  color: rgb(65, 65, 65);
+}
+
+.btn {
+  margin: 4px;
+  border: 1px solid rgb(19, 68, 167);
+  border-radius: 10px;
+  font-weight: bold;
+  color: rgb(19, 68, 167);
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background-image: linear-gradient(
+    45deg,
+    rgb(14, 68, 177),
+    rgb(143, 175, 240)
+  );
+  color: rgb(2, 21, 60);
+  transform: scale(1.25);
+}

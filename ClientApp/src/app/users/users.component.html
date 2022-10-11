@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <app-navbar></app-navbar>
+  <div class="container">
+    <h3>Lista użytkowników</h3>
+    <div class="row">
+      <app-user-item
+        *ngFor="let user of users | async"
+        [user]="user"
+      ></app-user-item>
+    </div>
+  </div>
+</div>

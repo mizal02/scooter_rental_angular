@@ -1,0 +1,22 @@
+.wrapper {
+  margin-bottom: 8px;
+  width: 300px;
+  box-shadow: 2px 5px 20px -4px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.disactivate {
+  margin-top: 0;
+  background-color: #f96161;
+  color: rgb(16, 15, 15);
+}
+
+.activate {
+  background-color: #78c167;
+  color: rgb(16, 15, 15);
+}
+
+p {
+  margin: 0;
+  padding: 12px 8px 0;
+}
